@@ -1,6 +1,6 @@
-# pythoneda-runtime/boot-infrastructure
+# pythoneda-runtime-eventstoredb/eventstoredb-infrastructure
 
-This is the definition for [https://github.com/pythoneda-runtime-infrastructure/boot](https://github.com/pythoneda-runtime/boot-infrastructure "pythoneda-runtime/boot-infrastructure").
+This is the definition for [https://github.com/pythoneda-runtime-infrastructure/eventstoredb-infrastructure](https://github.com/pythoneda-runtime-infrastructure/eventstoredb-infrastructure "pythoneda-runtime-infrastructure/eventstoredb-infrastructure").
 
 ## How to declare it in your flake
 
@@ -11,10 +11,10 @@ Check the latest tag of this repository and use it instead of the `[version]` pl
   description = "[..]";
   inputs = rec {
     [..]
-    pythoneda-runtime-boot-infrastructure = {
+    pythoneda-runtime-infrastructure-eventstoredb-infrastructure = {
       [optional follows]
       url =
-        "github:pythoneda-runtime-def/boot-infrastructure/[version]";
+        "github:pythoneda-runtime-infrastructure-def/eventstoredb-infrastructure/[version]";
     };
   };
   outputs = [..]
@@ -25,7 +25,7 @@ Should you use another PythonEDA modules, you might want to pin those also used 
 
 Use the specific package depending on your system (one of `flake-utils.lib.defaultSystems`) and Python version:
 
-- `#packages.[system].pythoneda-runtime-boot-infrastructure-python38` 
-- `#packages.[system].pythoneda-runtime-boot-infrastructure-python39` 
-- `#packages.[system].pythoneda-runtime-boot-infrastructure-python310` 
-- `#packages.[system].pythoneda-runtime-boot-infrastructure-python311` 
+- `#packages.[system].pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python38` 
+- `#packages.[system].pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python39` 
+- `#packages.[system].pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python310` 
+- `#packages.[system].pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python311` 

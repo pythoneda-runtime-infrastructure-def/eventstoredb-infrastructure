@@ -30,12 +30,12 @@
     "esdbclient_2": {
       "inputs": {
         "flake-utils": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "pythoneda-shared-infrastructure",
           "flake-utils"
         ],
         "nixos": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "pythoneda-shared-infrastructure",
           "nixos"
         ]
@@ -88,7 +88,7 @@
         "type": "github"
       }
     },
-    "pythoneda-runtime-boot": {
+    "pythoneda-runtime-infrastructure-eventstoredb": {
       "inputs": {
         "flake-utils": [
           "flake-utils"
@@ -102,20 +102,20 @@
         "pythoneda-shared-domain": [
           "pythoneda-shared-domain"
         ],
-        "pythoneda-shared-runtime-lifecycle-events": "pythoneda-shared-runtime-lifecycle-events"
+        "pythoneda-shared-runtime-infrastructure-eventstoredb-events": "pythoneda-shared-runtime-infrastructure-eventstoredb-events"
       },
       "locked": {
-        "lastModified": 1705956735,
-        "narHash": "sha256-uYYM92mkIAbpDGtMp24CtY+utNwwSVqVFb2hL0UcJF8=",
-        "owner": "pythoneda-runtime-def",
-        "repo": "boot",
-        "rev": "23c00fea68bef82fbb1ae3ae769e5adc6b30d634",
+        "lastModified": 1706013294,
+        "narHash": "sha256-MHXdi1SswCOwEm2dBULGvQLawmXHIucsnY6WvaLe6Co=",
+        "owner": "pythoneda-runtime-infrastructure-def",
+        "repo": "eventstoredb",
+        "rev": "53025109701936b91e39976178d83857bc3d1485",
         "type": "github"
       },
       "original": {
-        "owner": "pythoneda-runtime-def",
-        "ref": "0.0.4",
-        "repo": "boot",
+        "owner": "pythoneda-runtime-infrastructure-def",
+        "ref": "0.0.0",
+        "repo": "eventstoredb",
         "type": "github"
       }
     },
@@ -205,19 +205,19 @@
       "inputs": {
         "esdbclient": "esdbclient_2",
         "flake-utils": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "flake-utils"
         ],
         "nixos": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "nixos"
         ],
         "pythoneda-shared-banner": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "pythoneda-shared-banner"
         ],
         "pythoneda-shared-domain": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "pythoneda-shared-domain"
         ]
       },
@@ -236,41 +236,41 @@
         "type": "github"
       }
     },
-    "pythoneda-shared-runtime-lifecycle-events": {
+    "pythoneda-shared-runtime-infrastructure-eventstoredb-events": {
       "inputs": {
         "flake-utils": [
-          "pythoneda-runtime-boot",
+          "pythoneda-runtime-infrastructure-eventstoredb",
           "flake-utils"
         ],
         "nixos": [
-          "pythoneda-runtime-boot",
+          "pythoneda-runtime-infrastructure-eventstoredb",
           "nixos"
         ],
         "pythoneda-shared-banner": [
-          "pythoneda-runtime-boot",
+          "pythoneda-runtime-infrastructure-eventstoredb",
           "pythoneda-shared-banner"
         ],
         "pythoneda-shared-domain": [
-          "pythoneda-runtime-boot",
+          "pythoneda-runtime-infrastructure-eventstoredb",
           "pythoneda-shared-domain"
         ]
       },
       "locked": {
-        "lastModified": 1705956671,
-        "narHash": "sha256-me1xSEBjfsWVS7yTXBHvPWzOmfgYW3ebLHF4E4v7UWE=",
-        "owner": "pythoneda-shared-runtime-def",
-        "repo": "lifecycle-events",
-        "rev": "8fa3efae5b7ba26cff49eade2aa0dba1c8ccdfef",
+        "lastModified": 1706011578,
+        "narHash": "sha256-p4xCBfBOKkNUdKgS8s28TXbZ6Dv4FHZnOb05mIaRcM0=",
+        "owner": "pythoneda-shared-runtime-infra-def",
+        "repo": "eventstoredb-events",
+        "rev": "5a2bd71143257631911e61a580c68025008c9609",
         "type": "github"
       },
       "original": {
-        "owner": "pythoneda-shared-runtime-def",
-        "ref": "0.0.4",
-        "repo": "lifecycle-events",
+        "owner": "pythoneda-shared-runtime-infra-def",
+        "ref": "0.0.0",
+        "repo": "eventstoredb-events",
         "type": "github"
       }
     },
-    "pythoneda-shared-runtime-lifecycle-events-infrastructure": {
+    "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure": {
       "inputs": {
         "flake-utils": [
           "flake-utils"
@@ -285,54 +285,54 @@
           "pythoneda-shared-domain"
         ],
         "pythoneda-shared-infrastructure": "pythoneda-shared-infrastructure_2",
-        "pythoneda-shared-runtime-lifecycle-events": "pythoneda-shared-runtime-lifecycle-events_2"
+        "pythoneda-shared-runtime-infrastructure-eventstoredb-events": "pythoneda-shared-runtime-infrastructure-eventstoredb-events_2"
       },
       "locked": {
-        "lastModified": 1705956705,
-        "narHash": "sha256-6BQ9Uv+t+05mKlDhf/dbdgVqY4Eax/6/emNiIXAZP4M=",
-        "owner": "pythoneda-shared-runtime-def",
-        "repo": "lifecycle-events-infrastructure",
-        "rev": "9c04146a08c21557b9d9843b55091255d7fc45d3",
+        "lastModified": 1706013860,
+        "narHash": "sha256-r+oF9a1IMbNQuJ6bJPZWJ9YJ6nr4oGtnfQKkJFWg/cc=",
+        "owner": "pythoneda-shared-runtime-infra-def",
+        "repo": "eventstoredb-events-infrastructure",
+        "rev": "69cdd28e44087c11d94f3e9927db2067b32d6f22",
         "type": "github"
       },
       "original": {
-        "owner": "pythoneda-shared-runtime-def",
-        "ref": "0.0.2",
-        "repo": "lifecycle-events-infrastructure",
+        "owner": "pythoneda-shared-runtime-infra-def",
+        "ref": "0.0.1",
+        "repo": "eventstoredb-events-infrastructure",
         "type": "github"
       }
     },
-    "pythoneda-shared-runtime-lifecycle-events_2": {
+    "pythoneda-shared-runtime-infrastructure-eventstoredb-events_2": {
       "inputs": {
         "flake-utils": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "flake-utils"
         ],
         "nixos": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "nixos"
         ],
         "pythoneda-shared-banner": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "pythoneda-shared-banner"
         ],
         "pythoneda-shared-domain": [
-          "pythoneda-shared-runtime-lifecycle-events-infrastructure",
+          "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure",
           "pythoneda-shared-domain"
         ]
       },
       "locked": {
-        "lastModified": 1705956671,
-        "narHash": "sha256-me1xSEBjfsWVS7yTXBHvPWzOmfgYW3ebLHF4E4v7UWE=",
-        "owner": "pythoneda-shared-runtime-def",
-        "repo": "lifecycle-events",
-        "rev": "8fa3efae5b7ba26cff49eade2aa0dba1c8ccdfef",
+        "lastModified": 1706011578,
+        "narHash": "sha256-p4xCBfBOKkNUdKgS8s28TXbZ6Dv4FHZnOb05mIaRcM0=",
+        "owner": "pythoneda-shared-runtime-infra-def",
+        "repo": "eventstoredb-events",
+        "rev": "5a2bd71143257631911e61a580c68025008c9609",
         "type": "github"
       },
       "original": {
-        "owner": "pythoneda-shared-runtime-def",
-        "ref": "0.0.4",
-        "repo": "lifecycle-events",
+        "owner": "pythoneda-shared-runtime-infra-def",
+        "ref": "0.0.0",
+        "repo": "eventstoredb-events",
         "type": "github"
       }
     },
@@ -340,11 +340,11 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "nixos": "nixos",
-        "pythoneda-runtime-boot": "pythoneda-runtime-boot",
+        "pythoneda-runtime-infrastructure-eventstoredb": "pythoneda-runtime-infrastructure-eventstoredb",
         "pythoneda-shared-banner": "pythoneda-shared-banner",
         "pythoneda-shared-domain": "pythoneda-shared-domain",
         "pythoneda-shared-infrastructure": "pythoneda-shared-infrastructure",
-        "pythoneda-shared-runtime-lifecycle-events-infrastructure": "pythoneda-shared-runtime-lifecycle-events-infrastructure"
+        "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure": "pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure"
       }
     }
   },
