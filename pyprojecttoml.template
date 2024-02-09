@@ -28,8 +28,8 @@ packages = [{include = "@package@"}]
 [tool.poetry.dependencies]
 python = "^@pythonMajorMinorVersion@"
 pythoneda-runtime-infrastructure-eventstoredb = "^@pythonedaRuntimeInfrastructureEventstoredbVersion@"
-pythoneda-shared-domain = "^@pythonedaSharedDomainVersion@"
-pythoneda-shared-infrastructure = "^@pythonedaSharedInfrastructureVersion@"
+pythoneda-shared-pythonlang-domain = "^@pythonedaSharedPythonlangDomainVersion@"
+pythoneda-shared-pythonlang-infrastructure = "^@pythonedaSharedPythonlangInfrastructureVersion@"
 pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure = "^@pythonedaSharedRuntimeInfrastructureEventstoredbEventsInfrastructureVersion@"
 
 [build-system]
