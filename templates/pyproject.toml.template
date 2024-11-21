@@ -30,7 +30,7 @@ python = "^@pythonMajorMinorVersion@"
 pythoneda-runtime-infrastructure-eventstoredb = "^@pythonedaRuntimeInfrastructureEventstoredbVersion@"
 pythoneda-shared-pythonlang-domain = "^@pythonedaSharedPythonlangDomainVersion@"
 pythoneda-shared-pythonlang-infrastructure = "^@pythonedaSharedPythonlangInfrastructureVersion@"
-pythoneda-shared-runtime-infrastructure-eventstoredb-events-infrastructure = "^@pythonedaSharedRuntimeInfrastructureEventstoredbEventsInfrastructureVersion@"
+pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure = "^@pythonedaSharedRuntimeInfraEventstoredbEventsInfrastructureVersion@"
 
 [build-system]
 requires = ["poetry-core"]
