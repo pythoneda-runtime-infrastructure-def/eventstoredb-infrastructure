@@ -189,16 +189,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1732789182,
-        "narHash": "sha256-K7mBpUuwxDwl3yWvKqPrHsC4PI7hZyyEziAj1kLNRSE=",
+        "lastModified": 1732802036,
+        "narHash": "sha256-+ypNLLNzg/JMXm1RPW4BtxJcpjy4IYo9g8drNWF/91Q=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "infrastructure",
-        "rev": "7e3f6dc629aaad40cbd3955c7ddb989f535cfab0",
+        "rev": "1942755e7c7364129dc9f888b7d806d9a166d9f3",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.65",
+        "ref": "0.0.66",
         "repo": "infrastructure",
         "type": "github"
       }
@@ -224,16 +224,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1732789182,
-        "narHash": "sha256-K7mBpUuwxDwl3yWvKqPrHsC4PI7hZyyEziAj1kLNRSE=",
+        "lastModified": 1732802036,
+        "narHash": "sha256-+ypNLLNzg/JMXm1RPW4BtxJcpjy4IYo9g8drNWF/91Q=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "infrastructure",
-        "rev": "7e3f6dc629aaad40cbd3955c7ddb989f535cfab0",
+        "rev": "1942755e7c7364129dc9f888b7d806d9a166d9f3",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.65",
+        "ref": "0.0.66",
         "repo": "infrastructure",
         "type": "github"
       }
@@ -290,16 +290,16 @@
         "pythoneda-shared-runtime-infra-eventstoredb-events": "pythoneda-shared-runtime-infra-eventstoredb-events_2"
       },
       "locked": {
-        "lastModified": 1732793816,
-        "narHash": "sha256-l9o8PnTn7ZH7+PBXXnfns7GrU1NpoMUBhniPDxS9by8=",
+        "lastModified": 1732805478,
+        "narHash": "sha256-XN7lahCekNNsyOD8OmVi/ke7cPQ+g/UD2CJDdk63PRw=",
         "owner": "pythoneda-shared-runtime-infra-def",
         "repo": "eventstoredb-events-infrastructure",
-        "rev": "9bb899e69f9d29eff25cfb5061b43a92a3f8525a",
+        "rev": "def14b2a12b7d3b84f0e657241ee57f2b62dd589",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-runtime-infra-def",
-        "ref": "0.0.12",
+        "ref": "0.0.13",
         "repo": "eventstoredb-events-infrastructure",
         "type": "github"
       }
