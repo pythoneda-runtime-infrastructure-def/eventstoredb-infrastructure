@@ -20,8 +20,8 @@
   description =
     "Nix flake for pythoneda-runtime-infrastructure/eventstoredb";
   inputs = rec {
-    nixos.url = "github:NixOS/nixpkgs/24.05";
     flake-utils.url = "github:numtide/flake-utils/v1.0.0";
+    nixos.url = "github:NixOS/nixpkgs/24.05";
     pythoneda-runtime-infrastructure-eventstoredb = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
@@ -170,25 +170,7 @@
       in rec {
         defaultPackage = packages.default;
         devShells = rec {
-          default = pythoneda-shared-runtime-lifecycle-events-default;
-          pythoneda-shared-runtime-lifecycle-events-default =
-            pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python312;
-          pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python38 =
-            shared.devShell-for {
-              banner = "${
-                  pythoneda-shared-pythonlang-banner.packages.${system}.pythoneda-shared-pythonlang-banner-python38
-                }/bin/banner.sh";
-              extra-namespaces = "";
-              nixpkgs-release = nixpkgsRelease;
-              package =
-                packages.pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python38;
-              python = pkgs.python38;
-              pythoneda-shared-pythonlang-banner =
-                pythoneda-shared-pythonlang-banner.packages.${system}.pythoneda-shared-pythonlang-banner-python38;
-              pythoneda-shared-pythonlang-domain =
-                pythoneda-shared-pythonlang-domain.packages.${system}.pythoneda-shared-pythonlang-domain-python38;
-              inherit archRole layer org pkgs repo space;
-            };
+          default = pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python312;
           pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python39 =
             shared.devShell-for {
               banner = "${
@@ -253,24 +235,25 @@
                 pythoneda-shared-pythonlang-domain.packages.${system}.pythoneda-shared-pythonlang-domain-python312;
               inherit archRole layer org pkgs repo space;
             };
+          pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python313 =
+            shared.devShell-for {
+              banner = "${
+                  pythoneda-shared-pythonlang-banner.packages.${system}.pythoneda-shared-pythonlang-banner-python313
+                }/bin/banner.sh";
+              extra-namespaces = "";
+              nixpkgs-release = nixpkgsRelease;
+              package =
+                packages.pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python313;
+              python = pkgs.python313;
+              pythoneda-shared-pythonlang-banner =
+                pythoneda-shared-pythonlang-banner.packages.${system}.pythoneda-shared-pythonlang-banner-python313;
+              pythoneda-shared-pythonlang-domain =
+                pythoneda-shared-pythonlang-domain.packages.${system}.pythoneda-shared-pythonlang-domain-python313;
+              inherit archRole layer org pkgs repo space;
+            };
         };
         packages = rec {
-          default =
-            pythoneda-runtime-infrastructure-eventstoredb-infrastructure-default;
-          pythoneda-runtime-infrastructure-eventstoredb-infrastructure-default =
-            pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python312;
-          pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python38 =
-            pythoneda-runtime-infrastructure-eventstoredb-infrastructure-for {
-              python = pkgs.python38;
-              pythoneda-runtime-infrastructure-eventstoredb =
-                pythoneda-runtime-infrastructure-eventstoredb.packages.${system}.pythoneda-runtime-infrastructure-eventstoredb-python38;
-              pythoneda-shared-pythonlang-domain =
-                pythoneda-shared-pythonlang-domain.packages.${system}.pythoneda-shared-pythonlang-domain-python38;
-              pythoneda-shared-pythonlang-infrastructure =
-                pythoneda-shared-pythonlang-infrastructure.packages.${system}.pythoneda-shared-pythonlang-infrastructure-python38;
-              pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure =
-                pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure.packages.${system}.pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure-python38;
-            };
+          default = pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python312;
           pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python39 =
             pythoneda-runtime-infrastructure-eventstoredb-infrastructure-for {
               python = pkgs.python39;
@@ -318,6 +301,18 @@
                 pythoneda-shared-pythonlang-infrastructure.packages.${system}.pythoneda-shared-pythonlang-infrastructure-python312;
               pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure =
                 pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure.packages.${system}.pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure-python312;
+            };
+          pythoneda-runtime-infrastructure-eventstoredb-infrastructure-python313 =
+            pythoneda-runtime-infrastructure-eventstoredb-infrastructure-for {
+              python = pkgs.python313;
+              pythoneda-runtime-infrastructure-eventstoredb =
+                pythoneda-runtime-infrastructure-eventstoredb.packages.${system}.pythoneda-runtime-infrastructure-eventstoredb-python313;
+              pythoneda-shared-pythonlang-domain =
+                pythoneda-shared-pythonlang-domain.packages.${system}.pythoneda-shared-pythonlang-domain-python313;
+              pythoneda-shared-pythonlang-infrastructure =
+                pythoneda-shared-pythonlang-infrastructure.packages.${system}.pythoneda-shared-pythonlang-infrastructure-python313;
+              pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure =
+                pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure.packages.${system}.pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure-python313;
             };
         };
       });
