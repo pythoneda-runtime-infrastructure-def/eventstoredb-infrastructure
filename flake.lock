@@ -6,10 +6,7 @@
           "pythoneda-shared-pythonlang-infrastructure",
           "flake-utils"
         ],
-        "nixos": [
-          "pythoneda-shared-pythonlang-infrastructure",
-          "nixos"
-        ]
+        "nixos": "nixos"
       },
       "locked": {
         "dir": "esdbclient",
@@ -35,11 +32,7 @@
           "pythoneda-shared-pythonlang-infrastructure",
           "flake-utils"
         ],
-        "nixos": [
-          "pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure",
-          "pythoneda-shared-pythonlang-infrastructure",
-          "nixos"
-        ]
+        "nixos": "nixos_2"
       },
       "locked": {
         "dir": "esdbclient",
@@ -90,13 +83,45 @@
         "type": "github"
       }
     },
+    "nixos_2": {
+      "locked": {
+        "lastModified": 1717179513,
+        "narHash": "sha256-vboIEwIQojofItm2xGCdZCzW96U85l9nDW3ifMuAIdM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "63dacb46bf939521bdc93981b4cbb7ecb58427a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1717179513,
+        "narHash": "sha256-vboIEwIQojofItm2xGCdZCzW96U85l9nDW3ifMuAIdM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "63dacb46bf939521bdc93981b4cbb7ecb58427a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "pythoneda-runtime-infrastructure-eventstoredb": {
       "inputs": {
         "flake-utils": [
           "flake-utils"
         ],
-        "nixos": [
-          "nixos"
+        "nixpkgs": [
+          "nixpkgs"
         ],
         "pythoneda-shared-pythonlang-banner": [
           "pythoneda-shared-pythonlang-banner"
@@ -107,16 +132,16 @@
         "pythoneda-shared-runtime-infra-eventstoredb-events": "pythoneda-shared-runtime-infra-eventstoredb-events"
       },
       "locked": {
-        "lastModified": 1733403638,
-        "narHash": "sha256-aRJmRoOtvckqM1sTr5BcIacPqlpglT70F79/7aWdTIQ=",
+        "lastModified": 1733493312,
+        "narHash": "sha256-/FQn78B7GSZRKir6xGmmu7U+kWmezlUxQdBTC6jQu4A=",
         "owner": "pythoneda-runtime-infrastructure-def",
         "repo": "eventstoredb",
-        "rev": "5003870bb6c728bbc3b158581c85e37468a7a3d3",
+        "rev": "23bd73f2312d58cd1bbed09190e37bfacda80238",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-runtime-infrastructure-def",
-        "ref": "0.0.28",
+        "ref": "0.0.29",
         "repo": "eventstoredb",
         "type": "github"
       }
@@ -126,21 +151,21 @@
         "flake-utils": [
           "flake-utils"
         ],
-        "nixos": [
-          "nixos"
+        "nixpkgs": [
+          "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1732862235,
-        "narHash": "sha256-eMeTwIJ+aMgglZSY8YhHdTAy3STDjXNd+pB5b1JzYgA=",
+        "lastModified": 1733487266,
+        "narHash": "sha256-T4/WTHydMJrxLRYqnlU/OA+fZtmhS8tF4EHGGgHFbxs=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "banner",
-        "rev": "7557c5fb64daa6d2824db5f88e74e2df5b667f31",
+        "rev": "280b75ffcd3a871e157e7c163ba19ac2c615e872",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.71",
+        "ref": "0.0.72",
         "repo": "banner",
         "type": "github"
       }
@@ -150,24 +175,24 @@
         "flake-utils": [
           "flake-utils"
         ],
-        "nixos": [
-          "nixos"
+        "nixpkgs": [
+          "nixpkgs"
         ],
         "pythoneda-shared-pythonlang-banner": [
           "pythoneda-shared-pythonlang-banner"
         ]
       },
       "locked": {
-        "lastModified": 1733397996,
-        "narHash": "sha256-faRl1cx7+kqW2SwrUIAJOe8wqPfvaHTivHE1qY+BCWY=",
+        "lastModified": 1733487391,
+        "narHash": "sha256-Dj9kIIpJgW/XGbS3F1jIVo73qTwj1zJorYFB6oVbTj0=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "domain",
-        "rev": "b51a9726e9ae5a848fcceb84949672884460bb02",
+        "rev": "32c8d0a011d81cbed779f647f1c3cb01255320e8",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.93",
+        "ref": "0.0.94",
         "repo": "domain",
         "type": "github"
       }
@@ -178,8 +203,8 @@
         "flake-utils": [
           "flake-utils"
         ],
-        "nixos": [
-          "nixos"
+        "nixpkgs": [
+          "nixpkgs"
         ],
         "pythoneda-shared-pythonlang-banner": [
           "pythoneda-shared-pythonlang-banner"
@@ -189,16 +214,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1733398074,
-        "narHash": "sha256-nEIzkqo56LV5Y4FLP9SuvR1JQX6vMZjI2EMFJLF/tSs=",
+        "lastModified": 1733487467,
+        "narHash": "sha256-ZUGtRZp2Hs7bXvSRJUvkJiyhVq2vKQ1rNQpLzru3ggU=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "infrastructure",
-        "rev": "9c32dcc3331fdfaaf03feb019e9fa2a50f88c2d1",
+        "rev": "c7790632f524e58ef58ae4402459ab0b82076fb3",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.71",
+        "ref": "0.0.72",
         "repo": "infrastructure",
         "type": "github"
       }
@@ -210,9 +235,9 @@
           "pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure",
           "flake-utils"
         ],
-        "nixos": [
+        "nixpkgs": [
           "pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure",
-          "nixos"
+          "nixpkgs"
         ],
         "pythoneda-shared-pythonlang-banner": [
           "pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure",
@@ -224,16 +249,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1733398074,
-        "narHash": "sha256-nEIzkqo56LV5Y4FLP9SuvR1JQX6vMZjI2EMFJLF/tSs=",
+        "lastModified": 1733487467,
+        "narHash": "sha256-ZUGtRZp2Hs7bXvSRJUvkJiyhVq2vKQ1rNQpLzru3ggU=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "infrastructure",
-        "rev": "9c32dcc3331fdfaaf03feb019e9fa2a50f88c2d1",
+        "rev": "c7790632f524e58ef58ae4402459ab0b82076fb3",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.71",
+        "ref": "0.0.72",
         "repo": "infrastructure",
         "type": "github"
       }
@@ -244,9 +269,9 @@
           "pythoneda-runtime-infrastructure-eventstoredb",
           "flake-utils"
         ],
-        "nixos": [
+        "nixpkgs": [
           "pythoneda-runtime-infrastructure-eventstoredb",
-          "nixos"
+          "nixpkgs"
         ],
         "pythoneda-shared-pythonlang-banner": [
           "pythoneda-runtime-infrastructure-eventstoredb",
@@ -258,16 +283,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1733403478,
-        "narHash": "sha256-zHcVqUcE3B+dnvFjsT2qbSVg7PGpr7kaBpHvq7ERsqY=",
+        "lastModified": 1733493141,
+        "narHash": "sha256-8AYS0sLmX6aQo2lEJ5JadWRlqOJC+Dhox4F0YTKyRUk=",
         "owner": "pythoneda-shared-runtime-infra-def",
         "repo": "eventstoredb-events",
-        "rev": "42c0c4aebeb435cc13bb5605cbf620f984dc590d",
+        "rev": "894ad73183ffa5280300c507d861ffbee6a2ee55",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-runtime-infra-def",
-        "ref": "0.0.17",
+        "ref": "0.0.18",
         "repo": "eventstoredb-events",
         "type": "github"
       }
@@ -277,8 +302,8 @@
         "flake-utils": [
           "flake-utils"
         ],
-        "nixos": [
-          "nixos"
+        "nixpkgs": [
+          "nixpkgs"
         ],
         "pythoneda-shared-pythonlang-banner": [
           "pythoneda-shared-pythonlang-banner"
@@ -290,16 +315,16 @@
         "pythoneda-shared-runtime-infra-eventstoredb-events": "pythoneda-shared-runtime-infra-eventstoredb-events_2"
       },
       "locked": {
-        "lastModified": 1733403563,
-        "narHash": "sha256-YaIRRx0S5l/mXggP8VqY6vkcmJjdAlPd6yuY6oygDoU=",
+        "lastModified": 1733493230,
+        "narHash": "sha256-uWnZqMZs232N/w4IrDipFJDn12P5c1WUhaEs6hgXTDM=",
         "owner": "pythoneda-shared-runtime-infra-def",
         "repo": "eventstoredb-events-infrastructure",
-        "rev": "d39ef2fb5b979a133d66a65b3dc18ab72a33929d",
+        "rev": "ede4c61c2ee32a8c3dda9c0a30cd0d96a2214744",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-runtime-infra-def",
-        "ref": "0.0.18",
+        "ref": "0.0.19",
         "repo": "eventstoredb-events-infrastructure",
         "type": "github"
       }
@@ -310,9 +335,9 @@
           "pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure",
           "flake-utils"
         ],
-        "nixos": [
+        "nixpkgs": [
           "pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure",
-          "nixos"
+          "nixpkgs"
         ],
         "pythoneda-shared-pythonlang-banner": [
           "pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure",
@@ -324,16 +349,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1733403478,
-        "narHash": "sha256-zHcVqUcE3B+dnvFjsT2qbSVg7PGpr7kaBpHvq7ERsqY=",
+        "lastModified": 1733493141,
+        "narHash": "sha256-8AYS0sLmX6aQo2lEJ5JadWRlqOJC+Dhox4F0YTKyRUk=",
         "owner": "pythoneda-shared-runtime-infra-def",
         "repo": "eventstoredb-events",
-        "rev": "42c0c4aebeb435cc13bb5605cbf620f984dc590d",
+        "rev": "894ad73183ffa5280300c507d861ffbee6a2ee55",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-runtime-infra-def",
-        "ref": "0.0.17",
+        "ref": "0.0.18",
         "repo": "eventstoredb-events",
         "type": "github"
       }
@@ -341,7 +366,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixos": "nixos",
+        "nixpkgs": "nixpkgs",
         "pythoneda-runtime-infrastructure-eventstoredb": "pythoneda-runtime-infrastructure-eventstoredb",
         "pythoneda-shared-pythonlang-banner": "pythoneda-shared-pythonlang-banner",
         "pythoneda-shared-pythonlang-domain": "pythoneda-shared-pythonlang-domain",
