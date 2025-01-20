@@ -50,7 +50,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.92";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.93";
     };
     pythoneda-shared-runtime-infra-eventstoredb-events-infrastructure =
       {
@@ -61,7 +61,7 @@
         inputs.pythoneda-shared-pythonlang-domain.follows =
           "pythoneda-shared-pythonlang-domain";
         url =
-          "github:pythoneda-shared-runtime-infra-def/eventstoredb-events-infrastructure/0.0.33";
+          "github:pythoneda-shared-runtime-infra-def/eventstoredb-events-infrastructure/0.0.34";
       };
   };
   outputs = inputs:
